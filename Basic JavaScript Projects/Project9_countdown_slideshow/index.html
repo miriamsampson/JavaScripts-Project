@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title> Project 9 Countdown Slideshow</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+</head>
+
+<body>
+    <p> Set your timer!</p>
+    <input type="number" id="seeconds" value="" />
+    <button onclick="countdown()" id="startBtn">Click here</button>
+    <p id="timer"></p>
+<!--countdown timer section-->
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/img1.png" style="width: 100%"  alt="Snow covered cabin" />
+        <div class="text">Snowy houses</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/img2.png" style="width: 100%"  alt="Snow covered road in the woods" />
+        <div class="text">Snowy wood road</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/img.3png" style="width: 100%"  alt="Deer in the snow" />
+        <div class="text">Deer in the snow</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br />
+
+<div style="text-align:center">
+<span class="dot" onclcik="currentSlide(1)"></span>
+<span class="dot" onclcik="currentSlide(2)"></span>
+<span class="dot" onclcik="currentSlide(3)"></span>
+</div>
+
+<scipt src="JS/main.js"></scipt>
+</body>
+
+</html>
